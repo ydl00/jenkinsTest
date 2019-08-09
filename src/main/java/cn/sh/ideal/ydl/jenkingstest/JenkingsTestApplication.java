@@ -2,6 +2,7 @@ package cn.sh.ideal.ydl.jenkingstest;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.Mapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -14,7 +15,7 @@ public static void main(String[] args) {
     SpringApplication.run(JenkingsTestApplication.class, args);
 }
 
-@PostMapping("/")
+@GetMapping("/")
 public String a() {
 
 
